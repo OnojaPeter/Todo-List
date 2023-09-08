@@ -1,0 +1,138 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  background: hsl(235, 21%, 11%);
+}
+.overall{
+  position: relative;
+}
+.bg-img{
+  width: 100%;
+  object-fit: contain; 
+  overflow-x: hidden; 
+}
+header{
+  color: white;
+  margin-left: 20vw;
+  position: absolute;
+  top: 20vh;
+  z-index: 3;
+}
+main div, ul {
+  background-color: hsl(235, 24%, 19%);
+  /* margin: 0 20vw; */
+}
+main{
+  width: 100%;
+  padding: 0 20vw;
+  position: absolute;
+  top: 30vh;
+  z-index: 2;
+}
+.form-div{
+  margin-bottom: 2vh;
+}
+main h1{
+  color: hsl(234, 39%, 85%);
+}
+.h1-div{
+  display: flex;
+  justify-content: center;
+  padding: 2vh 0;
+  margin-bottom: 3vh;
+  
+}
+.addBtn, .checkbox, .delete{
+  cursor: pointer;
+}
+.addBtn{
+  width: 10%;
+  margin-left: 10%;
+  border: 0;
+  border-radius: 5%;
+  background: hsl(236, 33%, 92%);
+}
+.addBtn:hover{
+  border: 2px solid hsl(236, 33%, 92%);
+  background: hsl(235, 24%, 19%);
+  color: hsl(236, 33%, 92%);
+}
+form{ 
+  padding: 12px 3vw 12px 3vw;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.form-text{
+  border: 0;
+  background: hsl(236, 33%, 92%);
+  word-break: break-word;
+  white-space: normal;
+  height: auto;
+  resize: none;
+}
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+ 
+}
+ul .todo-a{
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  align-items: top;
+  width: 100%;
+  justify-content: space-between;
+  padding: 12px 3vw 12px 3vw;
+  border-bottom: 0.5px solid hsl(235, 21%, 11%);
+}
+.todoItem{
+  display: flex;
+  text-align: left;
+  width: 90%;
+  margin: 0;
+  padding: 0;
+  top: 0;
+ 
+}
+
+li{
+  width: 100%;
+  color: hsl(234, 39%, 85%);
+  position: relative;
+  font-size: 18px;
+  transition: 0.2s;
+  list-style: none;
+
+  word-break: break-word;
+  white-space: normal;
+  /* height: auto; */
+  
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.checkbox{
+  margin-right: 2vw;
+ } 
+.delete{
+  display: flex;
+  height: 100%;
+} 
+/* .xmark{
+  display: flex;
+  justify-self: flex-end;
+} */
+ul li.checked {
+  color: grey;
+    text-decoration: line-through;
+  }
+  
+
+ 
